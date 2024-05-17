@@ -99,11 +99,32 @@ body {
     padding: 15px;
     margin: 10px 0;
     background-color: #ffffff;
+    display: flex;
 }
 
 .student_profile p {
     margin: 0;
     line-height: 1.5;
+}
+
+.student_profile .student_name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.headshot_image_box {
+    text-align: right;
+    margin-bottom: 20px;
+    width: 1080px;
+}
+
+.headshot_image_box img {
+    max-width: 40%;
+    height: auto;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    display: flex;
+    vertical-align: bottom;
 }
 
 /* Add responsiveness */
