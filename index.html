@@ -1,82 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Do Student Learning Outcomes Improve Through the Use of a Personalized AI Tutor?</title>
-    <link rel="stylesheet" href="style.css" media="screen">
-    <script src="index.js" charset="utf-8" defer></script>
-  </head>
 
-  <body>
-    <div id="container">
-      <div id="title_box">
-        <h1 class="title_box_text">Do Student Learning Outcomes Improve Through the Use of a Personalized AI Tutor?</h1>
-        <h2 class="title_box_text">An OSU Capstone Project</h2>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Do Student Learning Outcomes Improve Through the Use of a Personalized AI Tutor?</title>
+  <link rel="stylesheet" href="style.css" media="screen">
+  <script src="index.js" charset="utf-8" defer></script>
+</head>
 
-      <div id="section_select">
-        <a class="link_box" href="#our_project_link">Our Project</a>
-        <a class="link_box" href="#the_results_link">The Results</a>
-        <a class="link_box" href="#talk_with_it_link">Talk With It</a>
-        <a class="link_box" href="#who_we_are_link">Who We Are</a>
-      </div>
+<body>
+  <div id="container">
+    <div id="title_box">
+      <h1 class="title_box_text">Do Student Learning Outcomes Improve Through the Use of a Personalized AI Tutor?</h1>
+      <h2 class="title_box_text">An OSU Capstone Project</h2>
+    </div>
 
-      <div class="info_box"> 
-        <a name="our_project_link"></a>
-        <h2>Our Project</h2>
-        <p>Under the guidance of Joseph Slade, a graduate from Oregon State University's School of Psychological Science, we implemented a model of OpenAI's ChatGPT-4 Turbo using a mixture of fine-tuning and retrieval augmented generation (RAG). The goal of this was to create a model capable of acting as a tutor for psychology freshmen. This model was then distributed to students through a Qualtrics survey. As a side project, we experimented with several different approaches in an attempt to find an AI-based writing grader that could perform as well as a human grader.</p>
-      </div>
+    <div id="section_select">
+      <a class="link_box" href="#our_project_link">Our Project</a>
+      <a class="link_box" href="#the_results_link">The Results</a>
+      <a class="link_box" href="#talk_with_it_link">Talk With It</a>
+      <a class="link_box" href="#who_we_are_link">Who We Are</a>
+    </div>
 
-      <div class="info_box"> 
-        <a name="the_results_link"></a>
-        <h2>The Results</h2>
-        <div class="image_box">
-          <img src="survey mean and standard deviation.png" alt="Line graph showing the means and standard deviations for 3 groups that were tested in the survey: base GPT-4 Turbo, AI Tutor, and control group.">
-          <!-- <img src="survey violin graph with outliers.png" alt="Violin graph showing the quiz scores of the 3 survey groups. Includes outliers (those who did not finish the survey)."> -->
-          <img src="survey violin graph without outliers.png" alt="Violin graph showing the quiz scores of the 3 survey groups. Excludes outliers (those who did not finish the survey).">
-          
-        </div>
-      </div>
+    <div class="info_box">
+      <a name="our_project_link"></a>
+      <h2>Our Project</h2>
+      <p>Under the guidance of Joseph Slade, a graduate from Oregon State University's School of Psychological Science,
+        we implemented a model of OpenAI's ChatGPT-4 Turbo using a mixture of fine-tuning and retrieval augmented
+        generation (RAG). The goal of this was to create a model capable of acting as a tutor for psychology freshmen.
+        This model was then distributed to students through a Qualtrics survey. As a side project, we experimented with
+        several different approaches in an attempt to find an AI-based writing grader that could perform as well as a
+        human grader.</p>
+    </div>
 
-      <div class="info_box"> 
-        <a name="talk_with_it_link"></a>
-        <h2>Talk With It</h2>
-        <iframe src="https://ai-tutor.vgo5ekt20mlli.us-west-2.cs.amazonlightsail.com/" width="100%" height="500" style="border:1px solid #dddddd; border-radius: 8px;"></iframe>
-      </div>
-
-      <div class="info_box"> 
-        <a name="who_we_are_link"></a>
-        <h2>Who We Are</h2>
-        <div class="team_image_box">
-          <img src="Team_Photo2.jpg" alt="A photo of our project partner Joe and 6 members. From left to right: Joe, Peter, Matthew, Kaelan, Theo, Dominick, Aaron">
-        </div>
-        <p> We are a team of 6 undergraduate computer science students at OSU working under the instruction of Joseph Slade and Dr. Regan Gurung. Also special thanks to
-          Alina Hyk for various project assistance. Learn more about the team below.</p>
-        
-        <div class="student_profile">
-          <p>Matthew Beitler (he / him)
-          Yo, it’s Matthew! CS major with the AI route. Graduating in Winter, so no grad plans yet (nice to include?). Here’s the LinkedIn.</p>
-        </div>
-
-        <div class="student_profile">
-          <p>Aaron Boothe (he / him)
-          Hey, I'm Aaron. I'm majoring in CS with a focus in AI. I'll be graduating this Spring. My <a href="https://www.linkedin.com/in/aaron-boothe-82207a28b/">LinkedIn</a>.</p>
-        </div>
-
-        <div class="student_profile">
-          <p>Kaelan Trowbridge (he / him)
-          Hey I'm Kaelan, I worked on data preparation, cleanup, and embedding data into the vector database. I'm graduating this Spring with a focus in data science. My <a href="https://www.linkedin.com/in/kaelan-trowbridge-7ba03b1b0/">LinkedIn</a>.</p>
-        </div>
-
-        <div class="student_profile">
-          <p>Dominick Tolomeo (he / him)
-          Hey I'm Kaelan, I worked on data preparation, cleanup, and embedding data into the vector database. I'm graduating this Spring with a focus in data science. My <a href="https://www.linkedin.com/in/dominick-tolomeo-3ba890209/">LinkedIn</a>.</p>
-        </div>
-
-
-        <!-- Then one for each of us -->
+    <div class="info_box">
+      <a name="the_results_link"></a>
+      <h2>The Results</h2>
+      <div class="image_box">
+        <img src="survey mean and standard deviation.png"
+          alt="Line graph showing the means and standard deviations for 3 groups that were tested in the survey: base GPT-4 Turbo, AI Tutor, and control group.">
+        <!-- <img src="survey violin graph with outliers.png" alt="Violin graph showing the quiz scores of the 3 survey groups. Includes outliers (those who did not finish the survey)."> -->
+        <img src="survey violin graph without outliers.png"
+          alt="Violin graph showing the quiz scores of the 3 survey groups. Excludes outliers (those who did not finish the survey).">
 
       </div>
     </div>
-  </body>
+
+    <div class="info_box">
+      <a name="talk_with_it_link"></a>
+      <h2>Talk With It</h2>
+      <iframe src="https://ai-tutor.vgo5ekt20mlli.us-west-2.cs.amazonlightsail.com/" width="100%" height="500"
+        style="border:1px solid #dddddd; border-radius: 8px;"></iframe>
+    </div>
+
+    <div class="info_box">
+      <a name="who_we_are_link"></a>
+      <h2>Who We Are</h2>
+      <div class="team_image_box">
+        <img src="Team_Photo2.jpg"
+          alt="A photo of our project partner Joe and 6 members. From left to right: Joe, Peter, Matthew, Kaelan, Theo, Dominick, Aaron">
+      </div>
+      <p> We are a team of 6 undergraduate computer science students at OSU working under the instruction of Joseph
+        Slade and Dr. Regan Gurung. Also special thanks to
+        Alina Hyk for various project assistance. Learn more about the team below.</p>
+
+      <div class="student_profile">
+        <p>Matthew Beitler (he / him)
+          Yo, it’s Matthew! CS major with the AI route. Graduating in Winter, so no grad plans yet (nice to include?).
+          Here’s the LinkedIn.</p>
+      </div>
+
+      <div class="student_profile">
+        <p>Aaron Boothe (he / him)
+          Hey, I'm Aaron. I'm majoring in CS with a focus in AI. I'll be graduating this Spring. My <a
+            href="https://www.linkedin.com/in/aaron-boothe-82207a28b/">LinkedIn</a>.</p>
+      </div>
+
+      <div class="student_profile">
+        <p>Kaelan Trowbridge (he / him)
+          Hey I'm Kaelan, I worked on data preparation, cleanup, and embedding data into the vector database. I'm
+          graduating this Spring with a focus in data science. My <a
+            href="https://www.linkedin.com/in/kaelan-trowbridge-7ba03b1b0/">LinkedIn</a>.</p>
+      </div>
+
+      <div class="student_profile">
+        <p>Theodore Ja (he / him)
+          Hello I'm Theodore, for this project I worked on the backend of the website as well as the LLM integration and
+          vector database. I'll be graduating this Spring with a focus in artificial intelligence. Feel free to contact
+          me at my <a href="mailto: tjastudy@gmail.com"> Email</a>.</p>
+      </div>
+
+      <div class="student_profile">
+        <p>Dominick Tolomeo (he / him)
+          Hey I'm Kaelan, I worked on data preparation, cleanup, and embedding data into the vector database. I'm
+          graduating this Spring with a focus in data science. My <a
+            href="https://www.linkedin.com/in/dominick-tolomeo-3ba890209/">LinkedIn</a>.</p>
+      </div>
+
+
+      <!-- Then one for each of us -->
+
+    </div>
+  </div>
+</body>
+
 </html>
