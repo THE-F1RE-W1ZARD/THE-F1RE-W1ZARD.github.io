@@ -1,59 +1,156 @@
-* {
+/* style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
 }
 
-html {
-    background-color: #D9D9D9;
+/* Container styles */
+#container {
+    max-width: 1200px; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-body {
-    min-height: 100vh;
-}
-
+/* Header styles */
 #title_box {
-    background-color: #FF7300;
-    color: #FFFFFF;
-
-    padding-top: 5px;
-    padding-bottom: 15px;
-    padding-left: 5px;
-}
-
-#section_select {
-    display: flex;
-    justify-content: space-around;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.link_box {
-    background-color: #000000;
-    color: #FFFFFF;
-
-    width: 25%;
+    background-color: #ff6600; /* Orange background */
+    color: #ffffff; /* White text */
+    padding: 20px;
     text-align: center;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    border-style: solid;
-    border-width: 2px;
-    border-color: #D9D9D9;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px 0; /* Add some margin for better spacing */
 }
 
-.info_box {
-    background-color: #FFFFFF;
-    width: calc(100% - 10px);
-    height: 450px;
+.title_box_text {
+    margin: 0;
+}
 
+/* Navigation styles */
+#section_select {
+    background-color: #ffffff;
     padding: 10px;
-    margin: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ff6600;
+}
 
+#section_select .link_box {
+    color: #ff6600;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+#section_select .link_box:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+.info_box {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.info_box h2 {
+    color: #ff6600;
+}
+
+.info_box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image_box {
     display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the space between images if needed */
+}
+
+.image_box img {
+    max-width: 48%; /* Adjust the width to fit within the container */
+    height: auto;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* Ensure that the container doesn't overflow */
+.info_box {
+    overflow: hidden;
+}
+
+.info_box iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* Student profile styles */
+.student_profile {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+}
+
+.student_profile p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    #section_select .link_box {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+/* General link styles */
+.info_box a {
+    color: #ff6600; /* Orange color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change color on hover */
+.info_box a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Ensure the links stay orange even after being clicked */
+.info_box a:visited {
+    color: #ff6600; /* Orange color for visited links */
+}
+
+/* Ensure the links stay orange when focused */
+.info_box a:focus {
+    color: #ff6600; /* Orange color for focused links */
+}
+
+/* Ensure the links stay orange when active */
+.info_box a:active {
+    color: #ff6600; /* Orange color for active links */
+}
+
+/* Centering the team photo */
+.team_image_box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team_image_box img {
+    max-width: 55%;
+    height: auto;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    display: inline-block;
 }
