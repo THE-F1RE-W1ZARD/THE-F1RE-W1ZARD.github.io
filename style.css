@@ -100,6 +100,10 @@ body {
     margin: 10px 0;
     background-color: #ffffff;
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 2rem;
 }
 
 .student_profile p {
@@ -114,17 +118,14 @@ body {
 
 .headshot_image_box {
     text-align: right;
-    margin-bottom: 20px;
-    width: 1080px;
 }
 
 .headshot_image_box img {
-    max-width: 40%;
+    width: 12vmin;
     height: auto;
     border: 1px solid #dddddd;
     border-radius: 8px;
-    display: flex;
-    vertical-align: bottom;
+    text-align: center;
 }
 
 /* Add responsiveness */
